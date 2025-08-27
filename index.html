@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Простой 3D-редактор — three.js</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="ui">
+    <div class="toolbar">
+      <div class="group" aria-label="Create primitives">
+        <button id="btn-cube" class="btn" type="button">Куб</button>
+        <button id="btn-sphere" class="btn" type="button">Сфера</button>
+        <button id="btn-cylinder" class="btn" type="button">Цилиндр</button>
+      </div>
+      <div class="divider"></div>
+      <div class="group" aria-label="Transform modes">
+        <button id="btn-translate" class="btn btn-mode active" type="button" data-mode="translate" title="Перемещение (W)">Перемещение</button>
+        <button id="btn-rotate" class="btn btn-mode" type="button" data-mode="rotate" title="Вращение (E)">Вращение</button>
+        <button id="btn-scale" class="btn btn-mode" type="button" data-mode="scale" title="Масштабирование (R)">Масштаб</button>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="viewport"></canvas>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
+
